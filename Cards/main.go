@@ -1,12 +1,11 @@
 package main
 
-import (
-	"fmt"
-)
-
 func main() {
-	card := "Ace of Spades"
-	card = "Five of Diamonds"
+	cards := newDeck()
 
-	fmt.Println(card)
+	hand, remainingCards := deal(cards, 5)
+
+	hand.print()
+
+	remainingCards.print()
 }
