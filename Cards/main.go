@@ -3,9 +3,10 @@ package main
 func main() {
 	cards := newDeck()
 
-	hand, remainingCards := deal(cards, 5)
+	//cards.saveToFile("MyCards")
 
-	hand.print()
-
-	remainingCards.print()
+	//cards := newDeckFromFile("MyCards")
+	cards.print()
+	cards.shuffle()
+	cards.print()
 }
